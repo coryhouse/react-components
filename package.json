@@ -19,5 +19,18 @@
   "dependencies": {
     "react": "^19.0.0"
   },
-  "types": "./dist/index.d.ts"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dist/index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
